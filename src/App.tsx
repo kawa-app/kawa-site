@@ -11,8 +11,12 @@ function App() {
 
   return (
     <div className="app">
-      <Button onClick={handleButtonClick}>
+      <Button onClick={handleButtonClick} variant="primary">
         {count > 0 ? `Clicked ${count} times!` : 'Press Me!'}
+      </Button>
+
+      <Button variant="secondary">
+        Secondary Button
       </Button>
     </div>
   )

@@ -1,44 +1,52 @@
-/* Button component styles based on your original design */
-.btn.btn-primary {
-  background: var(--primary);
-  color: var(--text);
+.btn {
   border: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0.5rem 1rem;
-  /* vertical horizontal padding */
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   position: relative;
   line-height: 1;
-  /* keep height tight to font size */
   min-width: 0;
-  /* allow shrinking if needed */
 }
 
-/* decorative pseudo-element that mirrors the button text */
-.btn.btn-primary::before {
+.btn::before {
   content: attr(data-text);
-  background: var(--secondary);
   border-radius: inherit;
   position: absolute;
   top: -6px;
   left: 0;
   right: 0;
   padding: 0.5rem 1rem;
-  /* match the button's padding so sizes align */
   display: flex;
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  /* let clicks pass to real button */
   transition: top 0.12s ease-in-out, transform 0.12s ease-in-out;
   transform-origin: center;
 }
 
-.btn.btn-primary:active::before {
+.btn:active::before {
   top: 0px;
   transform: translateY(0);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--text);
+}
+
+.btn-primary::before {
+  background: var(--secondary);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--text);
+}
+
+.btn-secondary::before {
+  background: var(--primary);
 }
