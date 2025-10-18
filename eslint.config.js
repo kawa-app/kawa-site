@@ -8,6 +8,12 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 export default defineConfig([
   globalIgnores(['dist']),
   {
+    plugins: [
+      'eslint-plugin-react-compiler',
+    ],
+    rules: {
+      'react-compiler/react-compiler': "error",
+    },
     files: ['**/*.{ts,tsx}'],
     extends: [
       js.configs.recommended,
