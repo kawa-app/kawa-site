@@ -5,16 +5,14 @@ interface BadgeProps {
   children?: React.ReactNode;
   className?: string;
   variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'info';
-  size?: 'small' | 'medium' | 'large';
 }
 
 const Badge: React.FC<BadgeProps> = ({
   children,
   className = '',
-  variant = 'primary',
-  size = 'medium'
+  variant = 'primary'
 }) => {
-  const badgeClasses = `badge badge-${variant} badge-${size} ${className}`;
+  const badgeClasses = `badge badge-${variant} ${className}`;
 
   return (
     <span className={badgeClasses}>

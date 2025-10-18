@@ -40,8 +40,8 @@ function App() {
             <h3>Badges</h3>
             <div className="component-row">
               <Badge variant="primary">Primary</Badge>
-              <Badge variant="secondary" size="small">Secondary</Badge>
-              <Badge variant="success" size="large">Success</Badge>
+              <Badge variant="secondary">Secondary</Badge>
+              <Badge variant="success">Success</Badge>
               <Badge variant="warning">Warning</Badge>
               <Badge variant="danger">Danger</Badge>
               <Badge variant="info">Info</Badge>

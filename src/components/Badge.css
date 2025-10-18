@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
+  padding: 0.25rem 0.5rem;
+  font-size: 12px;
   font-weight: 500;
   position: relative;
   overflow: hidden;
@@ -27,22 +29,6 @@
 
 .badge:hover::before {
   top: 0;
-}
-
-/* Sizes */
-.badge-small {
-  padding: 0.25rem 0.5rem;
-  font-size: 12px;
-}
-
-.badge-medium {
-  padding: 0.375rem 0.75rem;
-  font-size: 13px;
-}
-
-.badge-large {
-  padding: 0.5rem 1rem;
-  font-size: 14px;
 }
 
 /* Variants */
