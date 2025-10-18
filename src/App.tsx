@@ -74,13 +74,11 @@ function App() {
                 checked={toggleValue}
                 onChange={setToggleValue}
                 variant="success"
-                size="small"
               />
               <Toggle
                 checked={toggleValue}
                 onChange={setToggleValue}
                 variant="secondary"
-                size="large"
               />
             </div>
           </Card>

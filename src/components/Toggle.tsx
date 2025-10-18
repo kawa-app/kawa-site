@@ -8,7 +8,6 @@ interface ToggleProps {
   variant?: 'primary' | 'secondary' | 'success';
   disabled?: boolean;
   label?: string;
-  size?: 'small' | 'medium' | 'large';
 }
 
 const Toggle: React.FC<ToggleProps> = ({
@@ -17,10 +16,9 @@ const Toggle: React.FC<ToggleProps> = ({
   className = '',
   variant = 'primary',
   disabled = false,
-  label,
-  size = 'medium'
+  label
 }) => {
-  const toggleClasses = `toggle toggle-${variant} toggle-${size} ${className}`;
+  const toggleClasses = `toggle toggle-${variant} ${className}`;
 
   const handleToggle = () => {
     if (!disabled && onChange) {

@@ -29,6 +29,8 @@
 .toggle-track {
   position: relative;
   border-radius: 20px;
+  width: 44px;
+  height: 24px;
   background: var(--bg-light);
   border: 1px solid var(--border-muted);
   transition: all 0.12s ease-in-out;
@@ -43,6 +45,10 @@
   background: var(--text-muted);
   transition: all 0.12s ease-in-out;
   position: relative;
+  width: 18px;
+  height: 18px;
+  top: 2px;
+  left: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -59,61 +65,16 @@
   z-index: -1;
 }
 
+.toggle-thumb-checked {
+  left: 22px;
+}
+
 .toggle-thumb-checked::before {
   opacity: 1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-/* Sizes */
-.toggle-small .toggle-track {
-  width: 36px;
-  height: 20px;
-}
-
-.toggle-small .toggle-thumb {
-  width: 14px;
-  height: 14px;
-  top: 2px;
-  left: 2px;
-}
-
-.toggle-small .toggle-thumb-checked {
-  left: 18px;
-}
-
-.toggle-medium .toggle-track {
-  width: 44px;
-  height: 24px;
-}
-
-.toggle-medium .toggle-thumb {
-  width: 18px;
-  height: 18px;
-  top: 2px;
-  left: 2px;
-}
-
-.toggle-medium .toggle-thumb-checked {
-  left: 22px;
-}
-
-.toggle-large .toggle-track {
-  width: 52px;
-  height: 28px;
-}
-
-.toggle-large .toggle-thumb {
-  width: 22px;
-  height: 22px;
-  top: 2px;
-  left: 2px;
-}
-
-.toggle-large .toggle-thumb-checked {
-  left: 26px;
 }
 
 /* Variants */
