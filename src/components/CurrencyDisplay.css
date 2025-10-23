@@ -1,0 +1,32 @@
+.currency-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.currency-display--large {
+  gap: 0.75rem;
+}
+
+.currency-badge {
+  display: flex !important;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+}
+
+.currency-display--large .currency-badge {
+  padding: 0.5rem 0.75rem !important;
+  font-size: 1rem !important;
+}
+
+.currency-icon {
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.currency-amount {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-weight: 700;
+}

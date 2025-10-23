@@ -10,6 +10,12 @@
   position: relative;
   line-height: 1;
   min-width: 0;
+  transition: all 0.12s ease-in-out;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .btn::before {
@@ -28,7 +34,7 @@
   transform-origin: center;
 }
 
-.btn:active::before {
+.btn:active:not(:disabled)::before {
   top: 0px;
   transform: translateY(0);
 }
@@ -49,4 +55,40 @@
 
 .btn-secondary::before {
   background: var(--border);
+}
+
+.btn-success {
+  background: #10b981;
+  color: white;
+}
+
+.btn-success::before {
+  background: #059669;
+}
+
+.btn-warning {
+  background: #f59e0b;
+  color: white;
+}
+
+.btn-warning::before {
+  background: #d97706;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-danger::before {
+  background: #dc2626;
+}
+
+.btn-info {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-info::before {
+  background: #2563eb;
 }
